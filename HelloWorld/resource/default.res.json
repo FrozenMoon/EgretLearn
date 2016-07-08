@@ -1,0 +1,39 @@
+{
+	"groups": [
+		{
+			"keys": "bgImage,egretIcon",
+			"name": "preload"
+		},
+		{
+			"keys": "psb_png,cat3_jpg",
+			"name": "player"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bgImage"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egretIcon"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description"
+		},
+		{
+			"url": "assets/psb.png",
+			"type": "image",
+			"name": "psb_png"
+		},
+		{
+			"url": "assets/cat3.jpg",
+			"type": "image",
+			"name": "cat3_jpg"
+		}
+	]
+}
