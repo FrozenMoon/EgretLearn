@@ -1,12 +1,8 @@
 {
 	"groups": [
 		{
-			"keys": "bgImage,egretIcon",
+			"keys": "bgImage,egretIcon,sheetCat",
 			"name": "preload"
-		},
-		{
-			"keys": "psb_png,cat3_jpg",
-			"name": "player"
 		}
 	],
 	"resources": [
@@ -26,14 +22,10 @@
 			"name": "description"
 		},
 		{
-			"url": "assets/psb.png",
-			"type": "image",
-			"name": "psb_png"
-		},
-		{
-			"url": "assets/cat3.jpg",
-			"type": "image",
-			"name": "cat3_jpg"
+			"url": "assets/sheet/cat.json",
+			"type": "sheet",
+			"name": "sheetCat",
+			"subkeys": "cat,cat2,cat3,psb"
 		}
 	]
 }

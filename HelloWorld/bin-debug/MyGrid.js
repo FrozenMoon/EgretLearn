@@ -1,3 +1,4 @@
+// How to Use My Class
 var MyGrid = (function (_super) {
     __extends(MyGrid, _super);
     function MyGrid() {
