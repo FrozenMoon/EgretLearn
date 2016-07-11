@@ -1,17 +1,18 @@
 // How to use RenderTexture And Apply on a ScreenShot
 var TestScreenShot = (function () {
     function TestScreenShot() {
+        this.tex = RES.getRes("sheetCat.psb");
+        this.img = new egret.Bitmap(this.tex);
     }
     var d = __define,c=TestScreenShot,p=c.prototype;
-    p.Run = function (Main) {
-        var renderTexture = new egret.RenderTexture();
-        renderTexture.drawToTexture(Main);
-        // 转成base64数据
-        var rectScreen = new egret.Rectangle(0, 0, 100, 100);
-        var imgData = renderTexture.toDataURL("image/png", rectScreen);
-        console.log(renderTexture.textureWidth, renderTexture.textureHeight, Main.stage.width, Main.stage.height);
+    p.Run = function (main) {
+        // TODO 用RenderTexture的方式截图有问题 不能跨域？
+        // var renderTexture:egret.RenderTexture = new egret.RenderTexture();
+        // renderTexture.drawToTexture(imgCat);
+        var rectScreen = new egret.Rectangle(0, 0, this.tex._bitmapWidth, this.tex._bitmapHeight);
+        var imgData = this.tex.toDataURL("image/png", rectScreen);
         // 保存截图到文件
-        //renderTexture.saveToFile("image/png", "screenshot.png", rectScreen);
+        this.tex.saveToFile("image/png", "screenshot.png", rectScreen);
     };
     return TestScreenShot;
 }());

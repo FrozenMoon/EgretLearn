@@ -41,6 +41,7 @@ class Main extends egret.DisplayObjectContainer {
     // 各种测试类
     private testSheet:TestSheet;
     private testScreenShot:TestScreenShot;
+    private testColorMatrix:TestColorMatrix;
 
     public constructor() {
         super();
@@ -123,10 +124,13 @@ class Main extends egret.DisplayObjectContainer {
      */
     private createGameScene():void {
         this.testSheet = new TestSheet();
-        this.testSheet.Run(this);
+        //this.testSheet.Run(this);
         
         this.testScreenShot = new TestScreenShot();
-        this.testScreenShot.Run(this);
+        //this.testScreenShot.Run(this);
+
+        this.testColorMatrix = new TestColorMatrix();
+        this.testColorMatrix.Run(this);
     }
 
     /**
@@ -135,7 +139,7 @@ class Main extends egret.DisplayObjectContainer {
      */
     private createBitmapByName(name:string):egret.Bitmap {
         var texture:egret.Texture = RES.getRes(name);       
-        return new egret.Bitmap(texture);;
+        return new egret.Bitmap(texture);
     }
 
     /**

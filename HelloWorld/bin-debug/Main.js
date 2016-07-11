@@ -102,9 +102,11 @@ var Main = (function (_super) {
      */
     p.createGameScene = function () {
         this.testSheet = new TestSheet();
-        this.testSheet.Run(this);
+        //this.testSheet.Run(this);
         this.testScreenShot = new TestScreenShot();
-        this.testScreenShot.Run(this);
+        //this.testScreenShot.Run(this);
+        this.testColorMatrix = new TestColorMatrix();
+        this.testColorMatrix.Run(this);
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
@@ -113,7 +115,6 @@ var Main = (function (_super) {
     p.createBitmapByName = function (name) {
         var texture = RES.getRes(name);
         return new egret.Bitmap(texture);
-        ;
     };
     /**
      * 描述文件加载成功，开始播放动画

@@ -11,6 +11,7 @@ var game_file_list = [
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
 	"bin-debug/MyGrid.js",
+	"bin-debug/TestColorMatrix.js",
 	"bin-debug/TestScreenShot.js",
 	"bin-debug/TestSheet.js",
 	//----auto game_file_list end----
